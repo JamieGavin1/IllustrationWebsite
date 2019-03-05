@@ -1,0 +1,637 @@
+a:link{color: #898989;}
+a:hover{color: #898989;}
+a:visited{color: #898989;}
+a:active{color: #898989;}
+
+html{
+	font-family: 'Josefin Slab', serif;
+	color: white;
+	background-color: black;
+}
+
+main{
+	width: 100%;
+	height: 70%;
+	margin: auto;
+	margin-top: 0px;
+}
+
+/* ---------------------------------------------------------------------------------------------- ASIDE (SIDEBAR) STYLING */
+.CatGavinLogo
+{
+	width: 200px;
+	text-align: center;
+	position: relative;
+	margin-left: -10px;
+	margin-right: auto;
+}
+
+aside{
+	float: left;
+	position: fixed;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	text-align: center;
+	width: 250px;
+	background-image: url(../images/Sidebar.jpg);
+}
+
+aside ul
+{
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+aside ul li{
+	margin-top: 10vh;
+	margin-left: -20px;
+}
+
+.NavText{
+	text-decoration: none;
+	font-size: 2.5em;
+	text-align: center;
+	text-shadow: 0px 0px 100px rgba(255, 255, 255, 1);
+	transition: text-shadow 0.7s, color 0.7s;
+	-webkit-transition: text-shadow 0.6s, color 0.7s;
+}
+
+.NavText:hover{
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+	color: rgba(255, 255, 255, 1);
+	display: inline;
+}
+
+.AsideCurrent{
+	font-weight: bold;
+}
+
+/* ---------------------------------------------------------------------------------------------- SECTION STYLING */
+section{
+	height: 95vh;
+	width: 80%;
+	right:0px;
+	position: relative;
+	margin-left: 245px;
+	margin-right: 0px;
+	padding-left: 20px;
+	border-top: black 2px dashed;
+}
+
+section table{
+	text-align: center;
+}
+
+section p{font-size: 1.3em; margin-top: 0px; text-align: center; margin-bottom: 0px;}
+
+section ul{ font-size: 1.3em;}
+
+.slideHeading{
+	text-align: center; 
+	font-size: 2em;
+	margin: 10px;
+	color: rgba(255, 255, 255, 0.7	);
+	text-shadow: 0px 0px 100px rgba(77, 255, 207, 0.8);
+}
+	
+
+/* ---------------------------------------------------------------------------------------------- SLIDESHOW STYLING */
+
+.slideshowContainer
+{
+	/* width: 800px; */
+	height: 90%;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+.slide{
+	height: 100%;
+} 
+
+
+.slideImages
+{
+	text-align: center;
+	height: 100%;
+}
+
+/* PREVIOUS AND NEXT BUTTONS */
+.prevButton, .nextButton
+{
+	position: absolute;
+	top: 45%;
+	cursor: pointer;
+	height: 10%;
+	opacity: .5;
+	transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s;
+}
+
+.nextButton
+{
+	
+	right: 0;
+
+}
+
+.prevButton:hover, .nextButton:hover{
+	opacity: 1;
+}
+
+/* DOTS */
+.dot
+{
+	cursor:pointer;
+	border-radius: 50%;
+	margin: 0 2px;
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	background-color: rgba(255, 255, 255, 0.7);
+	transition: width 0.2s, height 0.2s, background-color 0.5s;
+	-webkit-transition: width 0.2s, height 0.2s, background-color 0.5s;
+}
+
+.activeDot, .dot:hover
+{
+	width:15px;
+	height:15px;
+	background-color: rgba(77, 255, 207, 0.4);
+}
+
+.dot:hover
+{
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.portImage
+{
+	height: 50vh;
+}
+
+
+/* ---------------------------------------------------------------------------------------------- "Piece" Details */
+
+.pieceDetailsPanel{
+	width: 1000px; 
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.pieceTitleAndDescription{
+	margin-top: 10%;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+.pieceTitle{
+	width: 33%;
+	text-align: right;
+	padding-right: 50px;
+	margin-left: 50px;
+	top: 20%;
+	font-size: 4em;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 0px 0px 100px rgba(77, 255, 207, 0.8);
+}
+
+.pieceDescription{
+	padding-left: 50px;
+	display: inline-block;
+	border-left: 1px solid white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: left;
+	font-size: 1.2em;
+	padding-right: 10%;
+	line-height: 1.2em;
+	
+}
+
+.pieceDescription a:link{color: #00825f;}
+.pieceDescription a:hover{color: #00825f;}
+.pieceDescription a:visited{color: #00825f;}
+.pieceDescription a:active{color: #00825f;}
+
+.portfolioThumbnail{
+	width: 70%;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	box-shadow: 0px 0px 0px rgba(0, 188, 138, 0);
+	transition: width 0.5s, box-shadow 0.5s;
+	-webkit-transition: width 1s, box-shadow 0.5s;
+}
+
+.portfolioThumbnail:hover{
+	width:75%;
+	box-shadow: 0px 0px 200px rgba(0, 188, 138, 0.5);
+}
+
+.mouseOverTip{
+	font-size: 1em;
+	color: rgba(255, 255, 255, 0.4);
+	margin-bottom: 30px;
+}
+
+.portImage{
+	text-align: center;
+	width: 60%;
+	height: 60%;
+}
+
+#fullWidthImage
+{
+	width: 80%;
+	height: 80%;
+}
+
+#glass {
+	z-index: 3;
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(77, 255, 207, 0.4);
+    display: none;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 102, 75, 0.2);
+}
+
+/* ---------------------------------------------------------------------------------------------- "Back to Portfolio" Button */
+.backPortfolioButton{
+	text-decoration: none;
+	color: white;
+	position: fixed;
+	float: top;
+	margin-top: 70px;
+	width: 40px;
+	height: 40px;
+	padding: 15px 10px 6px 15px;
+	font-size: 1.7em;
+	border-radius: 100px;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	background-color: rgba(0, 102, 75, 0.2);
+	box-shadow: 0px 0px 70px rgba(0, 102, 75, 0.8), inset 0 0 15px rgba(77, 255, 207, 0.3);
+	transition: background-color 0.5s, color 0.5s, width 0.5s, box-shadow 0.5s;
+	-webkit-transition: background-color 0.5s, color 0.5s, width 0.5s, box-shadow 0.5s;
+}
+
+.backButtonText{
+	position: absolute;
+	display: none;
+	font-weight: bold;
+	bottom: 16px;
+	color: rgba(0, 0, 0, 0);
+	white-space :nowrap;
+	transition: color 0.7s;
+	-webkit-transition: color 0.7s;
+}
+
+.backPortfolioButton:hover  .backButtonText{
+	display: inline;
+	color: rgba(0, 0, 0, 1);
+}
+
+.backPortfolioButton:hover{
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 2px solid rgba(255, 255, 255, 0.0);
+	box-shadow: 0px 0px 100px rgba(0, 188, 138, 0.8);
+	color: black;
+	width: 230px;
+}
+
+.mortBandcamp{
+	width: 50vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+html{
+	font-family: 'Josefin Slab', serif;
+	color: white;
+	background-color: black;
+	height: 100vh;
+}
+
+body{
+	margin: 0px;
+}
+
+/* ---------------------------------------------------------------------------------------------- ASIDE (SIDEBAR) STYLING */
+
+.mobileTopShadow{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	z-index: 2;
+	-webkit-box-shadow: inset 0px 136px 77px -46px rgba(0,0,0,1);
+-moz-box-shadow: inset 0px 136px 77px -46px rgba(0,0,0,1);
+box-shadow: inset 0px 136px 77px -46px rgba(0,0,0,1);
+}
+
+aside{
+	font-weight: bold;
+	position: fixed !important;
+	padding: 0px;
+	height: 5vh;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	background-repeat: no-repeat;
+	text-align: right;
+	background-image: none;
+	z-index: 2;
+}
+
+.CatGavinLogo
+{
+	width: 20vw;
+	position: fixed !important;
+	position: absolute;
+	left: 5vw;
+	top: 5vw;
+}
+
+aside ul
+{
+	font-family: 'Raleway', sans-serif;
+	position: absolute;
+	top: 0px;
+	left: 20vw;
+	text-decoration: none;
+	display: flex;
+	list-style: none;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+aside ul li{
+	margin-left: 5vw;
+	margin-top: 6vh;
+	text-outline: 2px 2px white;
+}
+
+.NavText{
+	text-decoration: none;
+	font-size: 6.5vw;
+	text-align: center;
+	text-shadow: 0px 0px 100px rgba(255, 255, 255, 1);
+	transition: text-shadow 0.7s, color 0.7s;
+	-webkit-transition: text-shadow 0.6s, color 0.7s;
+}
+
+.NavText:hover{
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+	color: rgba(255, 255, 255, 1);
+	display: inline;
+}
+
+.AsideCurrent{
+	font-weight: bold;
+	text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+}
+
+/* ---------------------------------------------------------------------------------------------- SECTION STYLING */
+
+section{
+	width: 100vw;
+	position: relative;
+	top: 15vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	padding: 0px;
+	border-top: black 2px dashed;
+	height: 20vh;
+}
+
+section table{
+	text-align: center;
+	z-index: 3;
+}
+
+section p{
+	font-size: 1.3em; 
+	margin-top: 0px; 
+	text-align: center;
+	margin-bottom: 0px;
+ }
+
+section ul{ font-size: 1.3em;}
+
+.slideHeading{
+	text-align: center; 
+	font-size: 1.6em;
+	margin: 10px;
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 0px 0px 100px rgba(77, 255, 207, 0.8);
+}	
+
+/* ---------------------------------------------------------------------------------------------- SLIDESHOW STYLING */
+
+.slideshowContainer
+{
+	width: 100vw;
+	height: 50vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.slide{
+	width: 100vw;
+	height: auto;
+} 
+
+
+.slideImages
+{
+	text-align: center;
+	width: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+}
+
+/* PREVIOUS AND NEXT BUTTONS */
+.prevButton, .nextButton
+{
+	z-index: 2;
+	position: fixed;
+	top: 45%;
+	cursor: pointer;
+	height: 5vh;
+	opacity: .5;
+	transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s;
+}
+
+.nextButton
+{
+	right: 0px;
+
+}
+
+.prevButton:hover, .nextButton:hover{
+	opacity: 1;
+}
+
+/* DOTS */
+.dot
+{
+	position: relative;
+	top: 55vh;
+	z-index: 2;
+	cursor:pointer;
+	border-radius: 50%;
+	margin: 0 10px;
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	background-color: rgba(255, 255, 255, 0.7);
+	transition: width 0.2s, height 0.2s, background- 	color 0.5s;
+	-webkit-transition: width 0.2s, height 0.2s, background-color 0.5s;
+}
+
+.activeDot, .dot:hover
+{
+	height: 15px;
+	width: 15px;
+	background-color: rgba(77, 255, 207, 0.4);
+}
+
+
+.portImage
+{
+	height: 50vh;
+	z-index: 3;
+	position: relative;
+}
+
+
+/* ---------------------------------------------------------------------------------------------- "Piece" Details */
+
+.pieceDetailsPanel{
+	width: 100vw; 
+	margin-left: 0px;
+	margin-right: auto;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.pieceTitleAndDescription{
+	margin-top: 10%;
+	margin-bottom: 5%;
+	text-align: center;
+	width: 100vw;
+}
+
+.pieceTitle{
+	width: 20vw;
+	text-align: right;
+	padding-right: 3vw;
+	top: 20%;
+	left: 0px;
+	font-size: 1.5em;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 0px 0px 100px rgba(77, 255, 207, 0.8);
+}
+
+.pieceDescription{
+	padding-left: 3vw;
+	padding-right: 0px;
+	border-left: 1px solid white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: left;
+	font-size: 4.5vw;
+	line-height: 20px;
+}
+
+.portfolioThumbnail{
+	z-index: 2;
+	width: 30vw;
+	display: relative;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	box-shadow: 0px 0px 0px rgba(0, 188, 138, 0);
+	transition: width 0.5s, box-shadow 0.5s;
+	-webkit-transition: width 1s, box-shadow 0.5s;
+}
+
+.portfolioThumbnail:hover{
+	width: 30vw;
+	box-shadow: 0px 0px 0px rgba(0, 188, 138, 0.5);
+}
+
+
+.mouseOverTip{
+	font-size: 1em;
+	color: rgba(255, 255, 255, 0.4);
+	margin-bottom: 30px;
+	display: none;
+}
+
+.portImage{
+	text-align: center;
+	width: 95vw;
+	height: 100%;
+}
+
+#fullWidthImage
+{
+	width: 80%;
+	height: 80%;
+}
+
+#glass {
+    position: fixed;
+	height: 0px;
+	width: 0px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(77, 255, 207, 0.4);
+    display: none;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 102, 75, 0.2);
+}
+
+.facebookFeed{
+	position: relative;
+	text-align: center;
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+	width: 350px;
+}
+
+.mortBandcamp{
+	width: 30vw;
+}
+
+/* ---------------------------------------------------------------------------------------------- "Back to Portfolio" Button */
+.backPortfolioButton{
+	display: none;
+}

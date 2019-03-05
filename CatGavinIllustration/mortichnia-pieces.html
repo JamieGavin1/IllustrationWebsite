@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Styles/styling.css" />
+		<script src="http://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway:100" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="lightzoom.js"></script>
+		<title>Cat Gavin Illustration - Moritchnia</title>
+	</head>
+	<body onload = "showSlide(1)">
+		<main class="contentsPage">
+		<div class="mobileTopShadow"></div>
+
+			<aside>
+				<img src="images/CatGavinLogo.png" alt="Cat Gavin Illustration" class="CatGavinLogo"/>
+				<ul>
+					<li><a href="index.html" class="NavText">Home</a></li>
+					<li class="AsideCurrent"><a href="portfolio.html" class="NavText">Portfolio</a></li>
+					<li><a href="about.html" class="NavText">About</a></li>
+					
+				</ul>
+			</aside>
+
+			<section>
+				<a class="backPortfolioButton" href="portfolio.html" >&#9668; <div class="backButtonText">Back To Portfolio</div></a>
+				<div class="pieceDetailsPanel">
+					<table class="pieceTitleAndDescription">
+						<tr>
+							<td class="pieceTitle">Mortichnia</td>
+							<td class="pieceDescription"><b>Album Art/Merchandise Designs.</b> </br>
+							<b>Description:</b></br>
+							<Cover illustration for Mortichnia's debut album <b>"Heir to Scoria and Ash"</b> along with <b>separate designs for merchandise.</b></br>
+							</br>You can check out Mortichnia's debut album on Bandcamp below:</br>	
+							<a href="https://open.spotify.com/album/0zXMPNhUwwxjlkzzAm6igN">Or click here to listen to the album on Spotify</a></br>
+							
+							</br><iframe style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=2672554352/size=large/bgcol=333333/linkcol=008461/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://apocalypticwitchcraft.bandcamp.com/album/heir-to-scoria-and-ash" class="mortBandcamp">Heir To Scoria And Ash by Mortichnia</a></iframe>
+							</td>
+							
+						</tr>
+					</table>
+					<div class="mouseOverTip" >Mouse-over for magnified view.</div>
+					<a name="MortMerchDesign" href="images/MortMerchDesign.jpg"><img src="images/MortichniaMerchDesign.jpg" class="portImage" alt="Mortichnia - Merch Design"></a>
+					<a name="MortCoverArt" href="images/MortichniaCoverArt.jpg"><img src="images/MortichniaCoverArt.jpg" class="portImage" alt="Moritchnia - Cover Art"></a>
+					<a name="MortBackCover" href="images/MortichniaBackCover.jpg"><img src="images/MortichniaBackCover.jpg" class="portImage" alt="Mortichnia - Back Cover"></a>
+				</div>
+				
+				<script>
+					$(document).ready(function () 
+					{
+						$('img.portImage').lightzoom({
+							zoomPower   : 2.5,
+							glassSize   : 250,
+						});
+					});
+				</script>
+			</section>
+		</main>
+	</body>
+</html>
+</html>

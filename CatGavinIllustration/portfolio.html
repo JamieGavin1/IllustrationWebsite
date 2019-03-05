@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Styles/styling.css" />
+		<script src="http://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway:100" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="lightzoom.js"></script>
+		<title>Cat Gavin Illustration - Portfolio</title>
+	</head>
+	<body onload = "showSlide(1)">
+		<main class="contentsPage">
+		<div class="mobileTopShadow"></div>
+
+			<aside>
+				<img src="images/CatGavinLogo.png" alt="Cat Gavin Illustration" class="CatGavinLogo"/>
+				<ul>
+					<li><a href="index.html" class="NavText">Home</a></li>
+					<li class="AsideCurrent"><a href="portfolio.html" class="NavText">Portfolio</a></li>
+					<li><a href="about.html" class="NavText">About</a></li>
+					
+				</ul>
+			</aside>
+
+			<section>
+				<div class="pieceDetailsPanel">
+					<table class="pieceTitleAndDescription">
+						<tr>
+							<td class="pieceTitle">Portfolio</td>
+							<td class="pieceDescription"><b>Below you will find a selection of my work, ranging from personal projects to commissions.</b> </br></br>
+							Click on any of the pieces below and use the magnifying glass to <b>view them up-close, as intended.</b>
+							</td>
+						</tr>
+						
+					</table>				
+					<table>
+						<tr class="portRow">
+							<td><a href="degree-pieces.html"><img src="images/thumbnails/ArduThumbnail.jpg" class="portfolioThumbnail" alt="Ardú"></a></td>
+							<td><a href="degree-pieces.html#Buaic"><img src="images/thumbnails/BuaicThumbnail.jpg" class="portfolioThumbnail" alt="Buaic"></a></td>
+							<td><a href="degree-pieces.html#Ciuin"><img src="images/thumbnails/CiuinThumbnail.jpg" class="portfolioThumbnail" alt="Ciuin"></a></td>
+						</tr>
+						<tr class="portRow">
+							<td><a href="mortichnia-pieces.html"><img src="images/thumbnails/MortichniaCoverArtThumbnail.jpg" class="portfolioThumbnail" alt="Morichnia Cover Art"></a></td>
+							<td><a href="mortichnia-pieces.html#MortMerchDesign"><img src="images/thumbnails/MortichniaMerchDesignThumbnail.jpg" class="portfolioThumbnail" alt="Mortichnia Design"></a></td>
+							<td><a href="mortichnia-pieces.html#MortBackCover"><img src="images/thumbnails/MortichniaBackCoverThumbnail.jpg" class="portfolioThumbnail" alt="Mortichnia Back Cover"></a></td>
+						</tr>
+						<tr class="portRow">
+							<td><a href="suan-pieces.html"><img src="images/thumbnails/SuanBlackCoverThumbnail.jpg" class="portfolioThumbnail" alt="Suan - Black Cover"></a></td>
+							<td><a href="suan-pieces.html#SuanBlue"><img src="images/thumbnails/BlueSuanCollageThumbnail.jpg" class="portfolioThumbnail" alt="Suan - Black Collage"></a></td>
+							<td><a href="suan-pieces.html#SuanCantDrink"><img src="images/thumbnails/CantDrinkCollageThumbnail.jpg" class="portfolioThumbnail" alt="Can't Drink The Water Collage"></a></td>
+						<tr class="portRow">
+							<td><a href="noroi-pieces.html"><img src="images/thumbnails/NoroiCoverThumbnail.jpg" class="portfolioThumbnail" alt="Noroi Cover"></a></td>
+							<td><a href="graphic-novel-piece.html"><img src="images/thumbnails/GraphicNovelThumbnail.jpg" class="portfolioThumbnail" alt="Graphic Novel"></a></td>
+							<td><a href="guide-to-dublin.html"><img src="images/thumbnails/GuideToDublinThumbnail.jpg" class="portfolioThumbnail" alt="The Practitioner's Guide to Dublin"></a></td>
+						</tr>
+						<tr class="portRow">
+							<td><a href="jakdaw-piece.html"><img src="images/thumbnails/JakdawThumbnail.png" class="portfolioThumbnail" alt="Jakdaw Productions Logo"></a></td>							
+						</tr>							
+					</table>
+				</div>
+				
+				<script>
+					$(document).ready(function () 
+					{
+						$('img.portImage').lightzoom({
+							zoomPower   : 1.5,
+							glassSize   : 150,
+						});
+					});
+				</script>
+			</section>
+		</main>
+	</body>
+</html>
+</html>

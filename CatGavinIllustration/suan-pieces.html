@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Styles/styling.css" />
+		<script src="http://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway:100" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1, height=device+height">
+		<script src="lightzoom.js"></script>
+		<title>Cat Gavin Illustration - Suan</title>
+	</head>
+	<body onload = "showSlide(1)">
+		<main class="contentsPage">
+		<div class="mobileTopShadow"></div>
+
+			<aside>
+				<img src="images/CatGavinLogo.png" alt="Cat Gavin Illustration" class="CatGavinLogo"/>
+				<ul>
+					<li><a href="index.html" class="NavText">Home</a></li>
+					<li class="AsideCurrent"><a href="portfolio.html" class="NavText">Portfolio</a></li>
+					<li><a href="about.html" class="NavText">About</a></li>
+					
+				</ul>
+			</aside>
+
+			<section>
+				<a class="backPortfolioButton" href="portfolio.html" >&#9668; <div class="backButtonText">Back To Portfolio</div></a>
+				<div class="pieceDetailsPanel">
+					<table class="pieceTitleAndDescription">
+						<tr>
+							<td class="pieceTitle">Suan</td>
+							<td class="pieceDescription"><b>Album art.</b> </br><b>Description:</b></br>
+							Album artwork for Suan's debut E.P <b>"Black"</i> and promotional work.</br></br>
+							
+							Listen to Suan's single <b>"Stand Me Up"</b> on Bandcamp below:
+							<iframe style="border: 0; width: 100%; height: 120px;" src="http://bandcamp.com/EmbeddedPlayer/track=265181689/size=large/bgcol=333333/linkcol=5daaa1/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://suan.ie/track/stand-me-up">Stand Me Up by Suan</a></iframe>
+							
+							</td>
+						</tr>
+					</table>
+					<div class="mouseOverTip" >Mouse-over for magnified view.</div>
+					<a name="SuanBlack" href="images/SuanBlackCover.jpg"><img src="images/SuanBlackCover.jpg" class="portImage" alt="Suan - Black"></a>
+					<a name="SuanBlue" href="images/BlueSuanCollage.jpg"><img src="images/BlueSuanCollage.jpg" class="portImage" alt="Suan - Blue"></a>
+					<a name="SuanCantDrink" href="images/CantDrinkCollage.jpg"><img src="images/CantDrinkCollage.jpg" class="portImage" alt="Suan - Can't Drink The Water"></a>
+				</div>
+				
+				<script>
+					$(document).ready(function () 
+					{
+						$('img.portImage').lightzoom({
+							zoomPower   : 1.5,
+							glassSize   : 150,
+						});
+					});
+				</script>
+			</section>
+		</main>
+	</body>
+</html>
+</html>

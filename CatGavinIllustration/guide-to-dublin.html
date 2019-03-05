@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Styles/styling.css" />
+		<script src="http://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway:100" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1, height=device+height">
+		<script src="lightzoom.js"></script>
+		<title>Cat Gavin Illustration - "The Practitioner's Guide to Dublin"</title>
+	</head>
+	<body onload = "showSlide(1)">
+		<main class="contentsPage">
+		<div class="mobileTopShadow"></div>
+		
+
+			<aside>
+				<img src="images/CatGavinLogo.png" alt="Cat Gavin Illustration" class="CatGavinLogo"/>
+				<ul>
+					<li><a href="index.html" class="NavText">Home</a></li>
+					<li class="AsideCurrent"><a href="portfolio.html" class="NavText">Portfolio</a></li>
+					<li><a href="about.html" class="NavText">About</a></li>
+					
+				</ul>
+			</aside>
+
+			<section>
+				<a class="backPortfolioButton" href="portfolio.html" >&#9668; <div class="backButtonText">Back To Portfolio</div></a>
+				<div class="pieceDetailsPanel">
+					<table class="pieceTitleAndDescription">
+						<tr>
+							<td class="pieceTitle">"The Practitioner's Guide to Dublin"
+</td>
+							<td class="pieceDescription"><b>Book Cover</b> </br><b>Description:</b></br>
+							<b>"The Practitioner's Guide to Dublin"</b> - An urban fantasy book written by <b>Stephen Jack</b>.</br></br>
+							
+							For those of you who are into the occult, this is definitely one to read. </br><a href="https://books.pronoun.com/the-practitioners-guide-to-dublin/https://books.pronoun.com/the-practitioners-guide-to-dublin/"><b>You can get your very own copy here.</b></a></p>
+							
+							</td>
+						</tr>
+					</table>
+					<div class="mouseOverTip" >Mouse-over for magnified view.</div>
+					<a name="PractitionersGuideToDublin" href="images/guideToDublin.jpg"><img src="images/guideToDublin.jpg" class="portImage" alt="The Practitioner's Guide to Dublin"></a>
+				</div>
+				
+				<script>
+					$(document).ready(function () 
+					{
+						$('img.portImage').lightzoom({
+							zoomPower   : 4,
+							glassSize   : 350,
+						});
+					});
+				</script>
+			</section>
+		</main>
+	</body>
+</html>
+</html>

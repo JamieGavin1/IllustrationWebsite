@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Styles/styling.css" />
+		<script src="http://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway:100" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="lightzoom.js"></script>
+		<title>Cat Gavin Illustration - Noroi</title>
+	</head>
+	<body onload = "showSlide(1)">
+		<main class="contentsPage">
+		<div class="mobileTopShadow"></div>
+
+			<aside>
+				<img src="images/CatGavinLogo.png" alt="Cat Gavin Illustration" class="CatGavinLogo"/>
+				<ul>
+					<li><a href="index.html" class="NavText">Home</a></li>
+					<li class="AsideCurrent"><a href="portfolio.html" class="NavText">Portfolio</a></li>
+					<li><a href="about.html" class="NavText">About</a></li>
+				</ul>
+			</aside>
+
+			<section>
+				<a class="backPortfolioButton" href="portfolio.html" >&#9668; <div class="backButtonText">Back To Portfolio</div></a>
+				<div class="pieceDetailsPanel">
+					<table class="pieceTitleAndDescription">
+						<tr>
+							<td class="pieceTitle">Noroi</td>
+							<td class="pieceDescription"><b>Album art.</b> </br><b>Description:</b></br>
+							Part of a collaboration for the E.P <b>"This Town Speaks"</b> I did with Noroi.</br></br> Listen to Noroi's E.P <b>"This Town Speaks"</b> on SoundCloud below:
+							
+							<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/219426124&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+							</td>
+						</tr>
+					</table>
+					<div class="mouseOverTip" >Mouse-over for magnified view.</div>
+					<a href="images/NoroiCover.jpg"><img src="images/NoroiCover.jpg" class="portImage" alt="Noroi - This Town Speaks"></a>
+				</div>
+				
+				<script>
+					$(document).ready(function () 
+					{
+						$('img.portImage').lightzoom({
+							zoomPower   : 1.5,
+							glassSize   : 150,
+						});
+					});
+				</script>
+			</section>
+		</main>
+	</body>
+</html>
+</html>
